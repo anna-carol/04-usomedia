@@ -1,0 +1,47 @@
+body{
+    background-color: ghostwhite;
+}
+#principal{
+    display: flex; 
+    height: 10%; 
+    justify-content: space-between;
+}
+.box501{
+    display: flex;
+    box-sizing: border-box;
+    width: 30%; 
+}
+.box502{
+    display: flex;
+    box-sizing: border-box;
+    width: 30%; 
+    justify-content: flex-end; 
+}
+.box16{
+    display: flex;
+    box-sizing: border-box;
+    width: 20%;
+}
+#top1{
+    background-color: blue
+}
+#top2{
+    background-color: red
+}
+#top3{
+    background-color: green
+}
+#top4{
+    background-color: rgb(224, 18, 180)
+}
+@media(max-width: 420px){
+    body{
+        background-color: fuchsia;}
+    }
+#top1:hover{
+    font-size: large;
+}
+p::first-letter{
+    color: red;
+    font-size: 130%;
+}
