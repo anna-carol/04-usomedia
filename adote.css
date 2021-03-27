@@ -1,47 +1,103 @@
 body{
-    background-color: ghostwhite;
+    display: block;
+    box-sizing: border-box;
+    background-image: url("image/fundo.png");
+    color: #6e4139;
+    font-family: cursive;
+    
 }
-#principal{
-    display: flex; 
-    height: 10%; 
+#cima{
+    display: flex;
+    height: 100px;
+    background-color: #ffffff;
+    width: auto;
     justify-content: space-between;
 }
-.box501{
+#menu{
     display: flex;
-    box-sizing: border-box;
-    width: 30%; 
+    justify-content: space-evenly;
+    height: auto;
+    width: 40%;
 }
-.box502{
+#menu div{
+    text-align: center;
+    width: 40%;
+}
+button{
+    background-color:white;
+    border: 4px solid #6e4139 ;
+    border-radius: 20%;
+    height: 50%;
+    width: 90%;
+    margin-top: 14%;
+    transition-duration: 0.5s;
+}
+#meio {
     display: flex;
-    box-sizing: border-box;
-    width: 30%; 
-    justify-content: flex-end; 
+    height: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 0%;
 }
-.box16{
+#meio div{
+    display: flex;  
+    border: 4px solid #6E4139;
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdf5d8;
+    text-align: center;
+
+}
+#meio div img{
+    margin-top: 4%;
+    width: 250px;
+    border-radius: 10%;
+    border: 4px solid #6e4139 ;
+    
+}
+p{
+    margin: 0%;
+    
+}
+#slogan{
     display: flex;
-    box-sizing: border-box;
-    width: 20%;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    margin : 2.5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    border: 4px solid #6e4139 ;
+    background-color: #fdf5d8;
+    justify-content: center; 
+    border-radius: 10%; 
 }
-#top1{
-    background-color: blue
+button:hover{
+    background-color: #fdf5d8 ;
+    border: 4px solid #6e4139 ;
 }
-#top2{
-    background-color: red
+footer{
+    background-color: #ffffff;
+    text-align: center;
 }
-#top3{
-    background-color: green
-}
-#top4{
-    background-color: rgb(224, 18, 180)
-}
-@media(max-width: 420px){
-    body{
-        background-color: fuchsia;}
+@media(max-width : 700px){
+    #logo{display: none;
+    
     }
-#top1:hover{
-    font-size: large;
-}
-p::first-letter{
-    color: red;
-    font-size: 130%;
+    #meio{
+        flex-direction: column;
+        align-items: center; }
+    #cima{
+        justify-content: center;
+    }
+    #slogan{
+        font-size:16px;
+        margin-top:5% ;
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+
 }
